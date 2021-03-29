@@ -1,0 +1,57 @@
+
+
+.text-presentation {
+	#appointment{
+		font: 130%/110% 'Sedgwick Ave', cursive;
+		@media (min-width: 600px){
+			font: 200%/130% 'Sedgwick Ave', cursive;
+		}
+		/*@media (min-width: 230px){
+			font: 250%/120% 'Sedgwick Ave', cursive;
+		}*/
+	}
+
+	#name {
+		font: 160%/110% 'Sedgwick Ave', cursive;
+		/*@media (min-width: 500px){
+			font: 250%/120% 'Sedgwick Ave', cursive;
+		}*/
+		@media (min-width: 600px){
+			font: 250%/130% 'Sedgwick Ave', cursive;
+		}
+	}
+
+	p {
+		display: block;
+		margin-right: 0;
+
+		@media (min-width: 600px){
+			margin-right: 40px;
+		}
+		@media (min-width: 800px){
+			margin-right: 70px;
+		}	
+	}
+
+	p > span {
+		display: block;
+		margin-right: 0.3em;
+		float: left;
+	}
+
+	span span {
+		opacity: 0;
+		backface-visibility: visible;
+		transition-property: all;
+		transition-duration: 660ms;
+		transition-timing-function: ease-in-out;
+		transform-origin: 50% 50% 0px;
+		transform: perspective(1050px) rotateY(0deg) scale(0.5);
+		-webkit-transition-property: all;
+		-webkit-transition-duration: 660ms;
+		-webkit-transition-timing-function: ease-in-out;
+		-webkit-transform-origin: 50% 50% 0px;
+		-webkit-transform: perspective(1050px) rotateY(0deg) scale(0.5);
+		display: inline-block;
+	}
+}

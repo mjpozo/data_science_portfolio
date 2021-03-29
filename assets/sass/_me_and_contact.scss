@@ -1,0 +1,52 @@
+#me_and_contact {
+	padding-top: 56px;
+	.contenedor {
+		width: 80%;
+		height: 100%;
+	    padding: 0 50px 50px 50px;
+	    margin: auto;
+
+		.contact_me {
+			padding: 20px 0;
+		}
+
+	    .row {
+	    	height: 100%;
+
+	    	.img_me {
+				@include pictBg(url(../../dist/img/me_now.jpeg));
+			}
+
+			.description_me {
+				padding-left: 30px;
+
+				#my_name {
+					color: rgb(215, 78, 133);
+					font-size: 110%;
+				}
+			}
+
+
+			/*second row*/
+
+			.center {
+				text-align: center;
+
+				.social {
+					font-size: 40px;
+				}
+			}
+			a {
+				text-decoration: none;
+			}
+			a:hover {
+				color: $hover_link_footer;
+				transition: .5s;
+			}
+			a, span {
+				color: rgb(215, 78, 133);
+				padding: 0 15px;
+			}
+	    }
+	}
+}
